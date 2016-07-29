@@ -1,0 +1,3 @@
+HR Select applicant
+If engineering else administrative, if fit else another applicant, if phone interview else another applicant, if in person interview else another applicant
+offer letter
