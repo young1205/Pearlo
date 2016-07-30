@@ -1,0 +1,22 @@
+// Human Resource
+digraph {
+	0 [label=fit shape=diamond]
+	1 [label="another applicant" shape=rect]
+	2 [label="phone interview" shape=diamond]
+	3 [label=Start shape=rect]
+	4 [label=engineering shape=diamond]
+	5 [label="HR Select applicant" shape=rect]
+	6 [label="offer letter" shape=rect]
+	7 [label="in person interview" shape=diamond]
+	8 [label=administrative shape=rect]
+		3 -> 5 [constraint=true]
+		5 -> 4 [constraint=true]
+		4 -> 8 [label=No constraint=true]
+		4 -> 0 [label=Yes constraint=true]
+		0 -> 1 [label=No constraint=true]
+		0 -> 2 [label=Yes constraint=true]
+		2 -> 1 [label=No constraint=true]
+		2 -> 7 [label=Yes constraint=true]
+		7 -> 1 [label=No constraint=true]
+		7 -> 6 [label=Yes constraint=true]
+}
